@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Pookie ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&family=Pacifico&family=Chewy&family=Indie+Flower&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+overflow-x:hidden;
+background:black;
+}
+
+section{
+width:100%;
+min-height:100vh;
+padding:30px 20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+position:relative;
+overflow:hidden;
+}
+
+img{
+max-width:100%;
+}
+
+.next-btn,.back-btn{
+position:absolute;
+bottom:20px;
+padding:12px 22px;
+border:none;
+border-radius:40px;
+font-size:15px;
+font-weight:bold;
+cursor:pointer;
+background:white;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.next-btn:hover,.back-btn:hover{
+transform:scale(1.08);
+}
+
+.next-btn{
+right:20px;
+}
+
+.back-btn{
+left:20px;
+}
+
+.fade-up{
+animation:fadeUp 1.5s ease;
+}
+
+.fade-left{
+animation:fadeLeft 1.5s ease;
+}
+
+.fade-right{
+animation:fadeRight 1.5s ease;
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(80px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes fadeLeft{
+from{opacity:0;transform:translateX(-80px)}
+to{opacity:1;transform:translateX(0)}
+}
+
+@keyframes fadeRight{
+from{opacity:0;transform:translateX(80px)}
+to{opacity:1;transform:translateX(0)}
+}
+
+/* PAGE 1 */
+
+#page1{
+background:linear-gradient(135deg,#ffe45c,#fff6c7);
+font-family:'Pacifico',cursive;
+text-align:center;
+}
+
+.flower{
+position:absolute;
+font-size:40px;
+animation:float 6s infinite ease-in-out;
+}
+
+@keyframes float{
+50%{transform:translateY(-20px)}
+}
+
+.main-photo{
+width:320px;
+border-radius:30px;
+box-shadow:0 0 30px rgba(0,0,0,0.2);
+margin-top:30px;
+}
+
+.title1{
+font-size:55px;
+color:#ff5e7e;
+text-shadow:2px 2px white;
+}
+
+/* PAGE 2 */
+
+#page2{
+background:repeating-linear-gradient(
+45deg,
+#fff 0px,
+#fff 30px,
+#ffe96e 30px,
+#ffe96e 60px
+);
+font-family:'Indie Flower',cursive;
+}
+
+.duck{
+position:absolute;
+left:10px;
+top:120px;
+font-size:70px;
+}
+
+.duck-board{
+background:white;
+padding:12px;
+border-radius:20px;
+font-size:18px;
+width:140px;
+box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.page2-title{
+font-size:38px;
+text-align:center;
+margin-bottom:30px;
+color:#ff4081;
+}
+
+.photo-row{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.photo-row img{
+width:260px;
+border-radius:25px;
+box-shadow:0 0 25px rgba(0,0,0,0.2);
+}
+
+/* PAGE 3 */
+
+#page3{
+background:linear-gradient(135deg,#ff2d55,#fff0f3);
+font-family:'Chewy',cursive;
+}
+
+.hearts span{
+position:absolute;
+font-size:25px;
+animation:heartFloat 8s linear infinite;
+}
+
+@keyframes heartFloat{
+from{transform:translateY(100vh)}
+to{transform:translateY(-120vh)}
+}
+
+.page3-title{
+font-size:60px;
+color:white;
+margin-bottom:25px;
+}
+
+.bottom-text{
+font-size:45px;
+margin-top:30px;
+color:#ff004c;
+}
+
+/* PAGE 4 */
+
+#page4{
+background:linear-gradient(135deg,#89cff0,#d9f5ff);
+font-family:'Poppins',sans-serif;
+}
+
+.cake-area{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:30px;
+}
+
+.cake{
+font-size:130px;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+50%{transform:translateY(-15px)}
+}
+
+.cake-text{
+font-size:28px;
+max-width:450px;
+color:#00334e;
+font-weight:600;
+}
+
+/* PAGE 5 */
+
+#page5{
+background:linear-gradient(135deg,#ff7b00,#ffd000,#ff3c38);
+font-family:'Dancing Script',cursive;
+}
+
+.bouquet-area{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:30px;
+}
+
+.bouquet{
+font-size:180px;
+position:relative;
+}
+
+.flowers-note{
+position:absolute;
+bottom:0;
+right:-30px;
+font-size:18px;
+background:white;
+padding:8px;
+border-radius:12px;
+font-family:'Indie Flower',cursive;
+}
+
+.para{
+max-width:450px;
+font-size:35px;
+color:white;
+line-height:1.5;
+}
+
+/* PAGE 6 */
+
+#page6{
+background:linear-gradient(135deg,#e0c3fc,#8ec5fc);
+font-family:'Pacifico',cursive;
+}
+
+.badge-title{
+font-size:55px;
+color:white;
+margin-bottom:30px;
+text-align:center;
+}
+
+.explore-btn{
+padding:18px 35px;
+border:none;
+border-radius:50px;
+font-size:22px;
+background:#ff5ea8;
+color:white;
+box-shadow:0 0 20px rgba(255,255,255,0.5);
+}
+
+/* PAGE 7 */
+
+#page7{
+background:#fff0f6;
+font-family:'Poppins',sans-serif;
+}
+
+.circle-container{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+
+.circle{
+width:250px;
+height:250px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:90px;
+box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+
+.circle1,.circle3{
+background:#ffb6d9;
+}
+
+.circle2{
+background:#fff3b0;
+}
+
+.circle-text{
+text-align:center;
+margin-top:15px;
+font-size:20px;
+font-weight:bold;
+}
+
+/* PAGE 8 */
+
+#page8{
+background:linear-gradient(135deg,#ffd6ec,#ffe8a3,#ffc4d6);
+font-family:'Chewy',cursive;
+}
+
+.memory-title{
+font-size:50px;
+color:#ff006e;
+margin-bottom:30px;
+text-align:center;
+}
+
+.memory-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+width:100%;
+max-width:1100px;
+}
+
+.memory-grid img{
+width:100%;
+border-radius:25px;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.cute-line{
+font-size:22px;
+text-align:center;
+color:#ff4081;
+}
+
+/* PAGE 9 */
+
+#page9{
+background:linear-gradient(135deg,#fff1eb,#ace0f9);
+font-family:'Indie Flower',cursive;
+}
+
+.letter-box{
+background:#fffaf0;
+padding:40px;
+border-radius:30px;
+max-width:700px;
+box-shadow:0 0 30px rgba(0,0,0,0.15);
+position:relative;
+}
+
+.letter-tag{
+position:absolute;
+right:-20px;
+top:-20px;
+background:#ff5ea8;
+color:white;
+padding:10px 20px;
+border-radius:20px;
+font-size:22px;
+}
+
+.letter-text{
+font-size:28px;
+line-height:1.8;
+color:#444;
+}
+
+.open-btn{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:40px;
+background:#ff5ea8;
+color:white;
+font-size:20px;
+}
+
+/* PAGE 10 */
+
+#page10{
+background:linear-gradient(135deg,#ffc6ff,#ffd6a5,#fdffb6);
+font-family:'Pacifico',cursive;
+text-align:center;
+}
+
+.uno-card{
+background:#ff0033;
+padding:50px 30px;
+border-radius:40px;
+max-width:700px;
+color:white;
+box-shadow:0 0 40px rgba(0,0,0,0.2);
+position:relative;
+}
+
+.uno-card::before{
+content:'UNO';
+position:absolute;
+top:15px;
+left:20px;
+font-size:35px;
+transform:rotate(-15deg);
+}
+
+.final-title{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.final-text{
+font-size:28px;
+line-height:1.8;
+}
+
+@media(max-width:768px){
+.title1,.page3-title,.badge-title,.final-title{
+font-size:40px;
+}
+
+.bottom-text{
+font-size:30px;
+}
+
+.para,.letter-text,.cake-text,.final-text{
+font-size:22px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section id="page1">
+<div class="flower" style="top:20px;left:20px;">🌻</div>
+<div class="flower" style="top:100px;right:30px;">🌼</div>
+<div class="flower" style="bottom:80px;left:50px;">🌸</div>
+<div class="flower" style="bottom:30px;right:60px;">🌷</div>
+
+<h1 class="title1 fade-up">Happy Birthday Pookie ❤️</h1>
+<img src="1000182321.jpg" class="main-photo fade-up">
+<button class="next-btn" onclick="goTo('page2')">Next ➜</button>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2">
+<div class="duck fade-left">
+🦆
+<div class="duck-board">Happy birthday to you 🎂</div>
+</div>
+
+<h1 class="page2-title fade-up">
+Roses are red,, violets are Blue,<br>
+I just want to sayy<br>
+Happyyy birthdayy to youu ❤️
+</h1>
+
+<div class="photo-row">
+<img src="1000182320.jpg" class="fade-left">
+<img src="1000182322.jpg" class="fade-right">
+</div>
+
+<button class="back-btn" onclick="goTo('page1')">⬅ Back</button>
+<button class="next-btn" onclick="goTo('page3')">Next ➜</button>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3">
+<div class="hearts">
+<span style="left:10%">❤️</span>
+<span style="left:30%">💖</span>
+<span style="left:50%">💕</span>
+<span style="left:70%">💗</span>
+<span style="left:90%">💞</span>
+</div>
+
+<h1 class="page3-title fade-up">I LOVE US</h1>
+
+<div class="photo-row">
+<img src="1000182318.jpg" class="fade-left">
+<img src="1000182319.jpg" class="fade-right">
+</div>
+
+<div class="bottom-text fade-up">TOGETHERRRR ❤️</div>
+
+<button class="back-btn" onclick="goTo('page2')">⬅ Back</button>
+<button class="next-btn" onclick="goTo('page4')">Next ➜</button>
+</section>
+
+<!-- PAGE 4 -->
+<section id="page4">
+<div class="cake-area">
+<div class="cake fade-left">🎂</div>
+<div class="cake-text fade-right">
+Here is your virtual cake 🎂<br><br>
+It is calorie free but full of love ❤️<br><br>
+BLOW YOUR CANDLE AND MAKE YOUR WISH ✨
+</div>
+</div>
+
+<button class="back-btn" onclick="goTo('page3')">⬅ Back</button>
+<button class="next-btn" onclick="goTo('page5')">Next ➜</button>
+</section>
+
+<!-- PAGE 5 -->
+<section id="page5">
+<div class="bouquet-area">
+<div class="bouquet fade-left">
+💐
+<div class="flowers-note">got you flowers 🌷</div>
+</div>
+
+<div class="para fade-right">
+Happy Birthday to the most beautiful person in my life ❤️<br><br>
+You make my world softer, brighter and happier.
+Thank you for being my peace, my comfort and my favorite human.
+I hope your day is filled with smiles and love ✨
+</div>
+</div>
+
+<button class="back-btn" onclick="goTo('page4')">⬅ Back</button>
+<button class="next-btn" onclick="goTo('page6')">Next ➜</button>
+</section>
+
+<!-- PAGE 6 -->
+<section id="page6">
+<h1 class="badge-title fade-up">Some badges for you 🏅</h1>
+<button class="explore-btn" onclick="goTo('page7')">Explore ✨</button>
+
+<button class="back-btn" onclick="goTo('page5')">⬅ Back</button>
+</section>
+
+<!-- PAGE 7 -->
+<section id="page7">
+<div class="circle-container">
+
+<div>
+<div class="circle circle1 fade-up">💍</div>
+<div class="circle-text">YOU ARE MY GEM 💖</div>
+</div>
+
+<div>
+<div class="circle circle2 fade-up">💡</div>
+<div class="circle-text">YOU MAKE MYY WORLD BRIGHT AND SHINE ✨</div>
+</div>
+
+<div>
+<div class="circle circle3 fade-up">❤️</div>
+<div class="circle-text">FOR BEING A-Maze-ING 💞</div>
+</div>
+
+</div>
+
+<button class="back-btn" onclick="goTo('page6')">⬅ Back</button>
+<button class="next-btn" onclick="goTo('page8')">Next ➜</button>
+</section>
+
+<!-- PAGE 8 -->
+<section id="page8">
+<h1 class="memory-title fade-up">Our Best Memories Together ✨</h1>
+
+<div class="cute-line">my favorite person everrr 💕</div>
+
+<div class="memory-grid">
+<img src="1000182316.jpg">
+<img src="1000182317.jpg">
+<img src="1000182318.jpg">
+<img src="1000182319.jpg">
+<img src="1000182320.jpg">
+<img src="1000182321.jpg">
+<img src="1000182322.jpg">
+</div>
+
+<div class="cute-line">every photo with you is my favorite memory ❤️</div>
+
+<button class="back-btn" onclick="goTo('page7')">⬅ Back</button>
+<button class="next-btn" onclick="goTo('page9')">Next ➜</button>
+</section>
+
+<!-- PAGE 9 -->
+<section id="page9">
+<div class="letter-box fade-up">
+<div class="letter-tag">Letter for you 💌</div>
+
+<div class="letter-text">
+Happy Birthday my love ❤️<br><br>
+You are one of the best things that ever happened to me.
+Your smile, your kindness, your presence and your little habits make my life beautiful.
+
+Please always stay happy and never lose the smile that I adore so much ✨<br><br>
+Thank you for existing and making my world brighter.
+I hope this year brings you success, peace and endless happiness.
+
+You deserve all the love in the universe 💖
+</div>
+
+<button class="open-btn">Open With Love ❤️</button>
+</div>
+
+<button class="back-btn" onclick="goTo('page8')">⬅ Back</button>
+<button class="next-btn" onclick="goTo('page10')">Next ➜</button>
+</section>
+
+<!-- PAGE 10 -->
+<section id="page10">
+<div class="uno-card fade-up">
+<h1 class="final-title">Happy Birthday Once Again ❤️</h1>
+
+<div class="final-text">
+I am sorry for the moments where my actions hurt you.
+You mean so much to me and I never want to be the reason behind your sadness 💔<br><br>
+Best of luck for your meetings tomorrow ✨<br><br>
+I hope you have the happiest day everrrr ❤️
+Keep smiling because your smile is my favorite thing in the world 💖
+</div>
+</div>
+
+<button class="back-btn" onclick="goTo('page9')">⬅ Back</button>
+</section>
+
+<script>
+function goTo(pageId){
+document.getElementById(pageId).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
